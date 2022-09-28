@@ -5,7 +5,7 @@
 */ 
 
 let johnSnowAttack=25
-let jamieLannisterAttack=35
+let jamieLannisterAttack=55
 
 if (johnSnowAttack > jamieLannisterAttack){
     console.log('John Snow has better attack than Jamie Lannister')
@@ -33,4 +33,29 @@ if (johnSnowHealth <= jamieLannisterAttack - johnSnowDefence){
     johnSnowHealth -= (jamieLannisterAttack - johnSnowDefence)
     console.log(`John Snow's Health is down to ${johnSnowHealth}`)
 }
+
+if (johnSnowHealth + 50 >= 100){
+    johnSnowHealth = 100
+}else{
+    johnSnowHealth += 50
+}
+
+console.log('John Snow\'s health has gone up to '+ johnSnowHealth)
+
+
+let coinLandsHeads = true
+
+if (coinLandsHeads){
+    console.log("The fight continues")
+}else{
+    console.log("John is allowed to run")
+}
+
+for (let i = 0; i < 5; i++){
+    johnSnowHealth -= jamieLannisterAttack - johnSnowDefence
+    console.log("John Snow's healh is now " + johnSnowHealth)
+}
+
+// writh logic in the for loop that detects if Johns health gets to 0 or less, in which case, you will print John is dead
+// and you will stop further loop iterations ( see the "break" JS keyword for leaving a loop early)
 
